@@ -1,4 +1,4 @@
-import React, {FC, useRef, useState} from 'react';
+import React, {FC, useState} from 'react';
 import {IData} from "../data";
 import styles from "../App.module.scss";
 import cn from 'classnames'
