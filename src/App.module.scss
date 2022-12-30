@@ -1,0 +1,22 @@
+.App{
+  @apply w-full h-[100vh] bg-gray-900;
+}
+.dragAndDrop{
+  @apply p-4 grid gap-2 grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  .group{
+    @apply bg-gray-600 p-4 rounded;
+    .title{
+      @apply text-white mb-2 text-xl;
+    }
+    .item{
+      @apply flex items-center justify-center bg-white rounded min-h-[125px] text-lg font-semibold;
+      &:not(:last-of-type){
+        @apply mb-2;
+      }
+    }
+    .currentItem{
+      @apply bg-gray-900;
+    }
+  }
+}
